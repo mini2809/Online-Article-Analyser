@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>text analysis API</title>
+	</head>
+	<body>
+		<div class ="flex-container">
+			<div class="header">
+				<h2>ONLINE ARTICLE ANALYSER </h2>
+			</div>
+				<div>
+					<form class="content">
+						
+						<h3>Enter here:</h3>
+						<textarea id="url" name="enter text" placeholder="enter a url" rows="4" cols="50"></textarea><br>
+						<button  value="Submit" onclick ="return Client.handleSubmit(event)" 
+						onsubmit="return Client.handleSubmit(event)">SUBMIT</button>
+						<div><h3>Result:</h3>
+						<h4>Polarity:</h4><div id="polarity"></div>
+						<h4>Subjectivity:</h4><div id ="subjectivity"></div>
+						<h4>Text:</h4><div id ="text"></div>
+						</div>
+							
+						
+					</form>
+				</div>
+			<div class="footer">
+				<h5> this uses tool Text Analysis of AYLIEN API (using Natural Language Processing)</h5>
+			</div>
+		</div>
+		<script>
+			if (  '%NODE_ENV%' || '%NODE_ENV%' === 'development') {
+			
+			} else {
+				if('serviceWorker' in navigator){
+					window.addEventListener('load',()=>{
+						navigator.serviceWorker.register('/service-worker.js');
+					});
+				}   
+			}
+			
+		</script>
+	</body>
+</html>

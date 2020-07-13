@@ -1,0 +1,17 @@
+$color: white;
+
+body{
+	align-text: center;
+	background-color: $color;
+}
+
+.flex-container{
+	display : flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+p{
+	font-size: 25px;
+}

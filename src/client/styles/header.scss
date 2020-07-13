@@ -1,0 +1,11 @@
+$size : center;
+$padding: 20px;
+
+.header{
+	width: 100%;
+	height: 15vh;
+	font-size: 20px;
+	text-align: $size;
+	padding: $padding;
+}
+
