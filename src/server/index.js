@@ -3,7 +3,7 @@ const analyse = require('./analyse.js')
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port= 8091;
+const port= process.env.PORT
 const bodyParser= require('body-parser');
 
 const AYLIENTextAPI = require('aylien_textapi');
