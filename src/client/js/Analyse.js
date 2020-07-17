@@ -20,7 +20,7 @@ export async function postData(url,Url)//{value:'https://medium.com/@thejasonfil
 }
 
 export async function analyseArticle(obj){//{value:url}
-	postData('http://localhost:8091/test',obj)
+	postData('/test',obj)
 	 .then(res=>{console.log(res)
 	 	return res;
 	}).then(obj => {UpdateUi(obj)})
