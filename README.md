@@ -9,13 +9,16 @@ I have also used jest for manual testing purpose and created my own test cases t
 
 
 Steps to start the App
-1.npm intsall (it will install dependencies and devdependencies on your host)
+```
+1.npm intsall (it will install dependencies and devdependencies on your host
      1.a npm install --only=production to install dependencies.
+```
+```
 2.npm run build (to build the main.js now u need to on express server)
 3.npm runbuild-dev (it will build in webpack development mode and it has webdev server to work upon no need to start express server )
 4.npm start (to start the express server when only npm run build and npm run build-prod)
 5.npm run build-prod (it will build in production mode and u need to start express server)
-
+```
  
 
 
